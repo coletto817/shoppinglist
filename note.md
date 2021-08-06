@@ -10,6 +10,5 @@ Submit Button:
 List items:
 1. display the input value- in a list form. 
 
-.push [] 
 
 
