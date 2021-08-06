@@ -26,7 +26,9 @@ function addShoppingItem(event) {
   listContainer.appendChild(newListItem);
   //append list
   shoppingListItems.appendChild(listContainer);
-  console.log("hello!!");
+  //clear input value
+  whatToBuy.value = "";
+  // console.log("hello!!");
 }
 
 
