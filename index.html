@@ -5,15 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/script.js" defer></script>
   <title>Shopping List</title>
 </head>
 
 <body>
   <div>
-    <form>
+    <form action="">
       <label for="whatToBuy">What to buy?</label>
-      <input type="text" id="whatToBuy">
-      <input type="submit" value="Submit">
+      <input type="text" value="" id="whatToBuy" class="whatToBuy">
+      <button type="submit" class="submitBtn">
+      Submit</button>
     </form>
   </div>
 
@@ -22,9 +24,9 @@
     <h1>Shopping List</h1>
 
     <!-- LIST -->
-    <div>
-      <ul>
-        <li>list item here</li>
+    <div class="listContainer">
+      <ul class="shoppingListItems">
+
       </ul>
     </div>
   </div>
