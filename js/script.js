@@ -8,7 +8,7 @@ const shoppingListItems = document.querySelector(".shoppingListItems");
 
 // EVENT LISTENER 
 submitBtn.addEventListener("click", addShoppingItem);
-
+shoppingListItems.addEventListener("click", deleteCheck);
 
 // FUNCTIONS
 let itemInputValue = whatToBuy.value; 
@@ -24,12 +24,21 @@ function addShoppingItem(event) {
   newListItem.innerText = whatToBuy.value;
   newListItem.classList.add('listItem2');
   listContainer.appendChild(newListItem);
-  //append list
-  shoppingListItems.appendChild(listContainer);
-  //clear input value
-  whatToBuy.value = "";
-  // console.log("hello!!");
+ 
+  const deleteBtn = document.createElement("button");
+  deleteBtn.innerHTML = "<button>Delete</button>";
+  deleteBtn.classList.add("deleteBtn");
+  listContainer.appendChild(deleteBtn);
+
+   //append list
+   shoppingListItems.appendChild(listContainer);
+   //clear input value
+   whatToBuy.value = "";
+   // console.log("hello!!");
+ 
 }
 
-
+// function deleteCheck(event){
+//   console.log(event.target)
+// }
 
